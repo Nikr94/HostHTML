@@ -5,6 +5,10 @@
 <!--  ----------------------------------------------------------------------  -->
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -12,14 +16,15 @@
 
 <form action="https://bpcompany--dpcdev.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
+<input type=hidden name='captcha_settings' value='{"keyname":"TestRecaptcha","fallback":"true","orgId":"00D3M0000000bSB","ts":""}'>
 <input type=hidden name="orgid" value="00D3M0000000bSB">
 <input type=hidden name="retURL" value="https://fsupplierportal.bp.com/sites#myCase-Display">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 <!--  these lines if you wish to test in debug mode.                          -->
-  <input type="hidden" name="debug" value=1>                              
-  <input type="hidden" name="debugEmail" value="nikita.gupta1@bp.com">    
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="nikita.gupta1@bp.com">    -->
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
@@ -301,56 +306,10 @@ Sub-Query:<select  id="00N4G000006xsWf" name="00N4G000006xsWf" title="Sub-Query"
 <option value="Wrong ANID linked to bp">Wrong ANID linked to bp</option>
 </select><br>
 
-<label for="status">Status</label><select  id="status" name="status"><option value="">--None--</option><option value="Draft">Draft</option>
-<option value="New">New</option>
-<option value="Pending Assignment">Pending Assignment</option>
-<option value="Assigned">Assigned</option>
-<option value="In Progress">In Progress</option>
-<option value="Send to FairMarkit">Send to FairMarkit</option>
-<option value="Pending Information">Pending Information</option>
-<option value="Pending Approval">Pending Approval</option>
-<option value="Approved">Approved</option>
-<option value="Rejected">Rejected</option>
-<option value="On Hold">On Hold</option>
-<option value="Returned">Returned</option>
-<option value="Resolved">Resolved</option>
-<option value="Terminated">Terminated</option>
-<option value="Escalated">Escalated</option>
-<option value="Open">Open</option>
-<option value="Closed">Closed</option>
-<option value="Under Investigation">Under Investigation</option>
-<option value="Complete">Complete</option>
-<option value="Ready to Submit">Ready to Submit</option>
-<option value="Submitted">Submitted</option>
-<option value="Accepted">Accepted</option>
-<option value="Recommendation Complete">Recommendation Complete</option>
-<option value="Revision Required">Revision Required</option>
-<option value="Deal Approved">Deal Approved</option>
-<option value="Approved with Terms">Approved with Terms</option>
-<option value="Deal Rejected">Deal Rejected</option>
-<option value="Archived">Archived</option>
-<option value="Rejected (Closed)">Rejected (Closed)</option>
-<option value="Approved (Closed)">Approved (Closed)</option>
-<option value="Reassigned">Reassigned</option>
-<option value="Proposed Change">Proposed Change</option>
-<option value="Waiting for Information">Waiting for Information</option>
-<option value="Updated">Updated</option>
-<option value="In-transition">In-transition</option>
-<option value="Consultation">Consultation</option>
-<option value="Pipeline">Pipeline</option>
-<option value="Implementation">Implementation</option>
-<option value="Pending Approval to Implement">Pending Approval to Implement</option>
-<option value="Pending Approval to Design">Pending Approval to Design</option>
-<option value="Design">Design</option>
-<option value="Initial Review">Initial Review</option>
-<option value="Awaiting SAP closure">Awaiting SAP closure</option>
-<option value="Actions complete">Actions complete</option>
-<option value="Merged">Merged</option>
-</select><br>
-
 <input type="hidden"  id="external" name="external" value="1" /><br>
-<input name="recordType" id="recordType" value="0124G0000007XA0">
+<input type="hidden" name="recordType" id="recordType" value="0124G0000007XA0">
 
+<div class="g-recaptcha" data-sitekey="6Ld1WBkgAAAAAFasdsdeZ-pXGsnicLDnA5qTYcYr"></div><br>
 <input type="submit" name="submit">
 
 </form>
