@@ -1,0 +1,356 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://bpcompany--dpcdev.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D3M0000000bSB">
+<input type=hidden name="retURL" value="https://fsupplierportal.bp.com/sites#myCase-Display">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+  <input type="hidden" name="debug" value=1>                              
+  <input type="hidden" name="debugEmail" value="nikita.gupta1@bp.com">    
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+Query:<select  id="00N4G000006xryx" name="00N4G000006xryx" title="Query"><option value="">--None--</option><option value="Amazon Business Service (ABS)">Amazon Business Service (ABS)</option>
+<option value="Approach the Market (RfX / eAuction)">Approach the Market (RfX / eAuction)</option>
+<option value="Approvals">Approvals</option>
+<option value="Approvals / Delegation">Approvals / Delegation</option>
+<option value="Ariba System Access and Support">Ariba System Access and Support</option>
+<option value="Bidders">Bidders</option>
+<option value="Bidding Event">Bidding Event</option>
+<option value="Buying Channel">Buying Channel</option>
+<option value="Catalogue">Catalogue</option>
+<option value="Category management">Category management</option>
+<option value="Contract">Contract</option>
+<option value="ContractingAI">ContractingAI</option>
+<option value="Contracts &amp; Pricebook / Catalogue">Contracts &amp; Pricebook / Catalogue</option>
+<option value="Counterparty Due Diligence">Counterparty Due Diligence</option>
+<option value="Credit Note (CN)">Credit Note (CN)</option>
+<option value="Delegation">Delegation</option>
+<option value="E-Maintenance">E-Maintenance</option>
+<option value="Emptoris">Emptoris</option>
+<option value="Goods / Services Receipting">Goods / Services Receipting</option>
+<option value="Invoice">Invoice</option>
+<option value="Invoice / Credit Note / Payment">Invoice / Credit Note / Payment</option>
+<option value="Invoice Against Contract">Invoice Against Contract</option>
+<option value="Material Management &amp; Warehousing">Material Management &amp; Warehousing</option>
+<option value="Monitoring">Monitoring</option>
+<option value="Non-Helpdesk Related">Non-Helpdesk Related</option>
+<option value="Non-PO Invoice">Non-PO Invoice</option>
+<option value="Others">Others</option>
+<option value="Payment">Payment</option>
+<option value="PO Invoice">PO Invoice</option>
+<option value="Pricebook">Pricebook</option>
+<option value="Purchase Order (PO)">Purchase Order (PO)</option>
+<option value="Purchase Requisition (PR)">Purchase Requisition (PR)</option>
+<option value="Reporting">Reporting</option>
+<option value="Requisitioning/Purchase Order">Requisitioning/Purchase Order</option>
+<option value="Service Entry Sheet (SES)">Service Entry Sheet (SES)</option>
+<option value="Service Solution (legacy)">Service Solution (legacy)</option>
+<option value="Shopping Cart (SC)">Shopping Cart (SC)</option>
+<option value="Sourcing">Sourcing</option>
+<option value="System Access / Support">System Access / Support</option>
+<option value="System Access &amp; Administrative Support">System Access &amp; Administrative Support</option>
+<option value="Training">Training</option>
+<option value="Update Corporate Details">Update Corporate Details</option>
+<option value="Vendor Master Data (VMD)">Vendor Master Data (VMD)</option>
+<option value="Vendor Set Up / Update">Vendor Set Up / Update</option>
+</select><br>
+
+Sub-Query:<select  id="00N4G000006xsWf" name="00N4G000006xsWf" title="Sub-Query"><option value="">--None--</option><option value="ABS Access Issue">ABS Access Issue</option>
+<option value="ABS General Query">ABS General Query</option>
+<option value="Account Balance Confirmation">Account Balance Confirmation</option>
+<option value="Account Setup">Account Setup</option>
+<option value="Account Setup/Profile">Account Setup/Profile</option>
+<option value="Activate Counterparty">Activate Counterparty</option>
+<option value="Adjust Approval Matrix (EU)">Adjust Approval Matrix (EU)</option>
+<option value="Administrative Support">Administrative Support</option>
+<option value="Amend Counterparty">Amend Counterparty</option>
+<option value="Approval Delegation">Approval Delegation</option>
+<option value="Approval General Query">Approval General Query</option>
+<option value="Approvals">Approvals</option>
+<option value="Aravo">Aravo</option>
+<option value="Aravo General Query">Aravo General Query</option>
+<option value="Aravo Refresh">Aravo Refresh</option>
+<option value="Aravo System Error">Aravo System Error</option>
+<option value="ARIBA Enterprise Fees">ARIBA Enterprise Fees</option>
+<option value="Ariba Guided Buying">Ariba Guided Buying</option>
+<option value="Ariba Mobile App">Ariba Mobile App</option>
+<option value="Ariba Navigation">Ariba Navigation</option>
+<option value="Ariba Spend Management">Ariba Spend Management</option>
+<option value="Audit Support">Audit Support</option>
+<option value="Auto-GR">Auto-GR</option>
+<option value="Auto-SES Approval">Auto-SES Approval</option>
+<option value="Backbone Access">Backbone Access</option>
+<option value="Banking Account Details">Banking Account Details</option>
+<option value="Barcode">Barcode</option>
+<option value="Bidder Change">Bidder Change</option>
+<option value="Bidder Creation">Bidder Creation</option>
+<option value="Bidders">Bidders</option>
+<option value="Bidder to Vendor Conversion">Bidder to Vendor Conversion</option>
+<option value="Bidding Event">Bidding Event</option>
+<option value="Bidding Event Contact">Bidding Event Contact</option>
+<option value="Bidding Event General Query">Bidding Event General Query</option>
+<option value="Bidding Event Set up">Bidding Event Set up</option>
+<option value="Bidding Event Technical Error">Bidding Event Technical Error</option>
+<option value="Block for Purchase">Block for Purchase</option>
+<option value="Buying Channel">Buying Channel</option>
+<option value="Call-off Contract/Release Order">Call-off Contract/Release Order</option>
+<option value="Call-off Creation">Call-off Creation</option>
+<option value="Can&#39;t access account">Can&#39;t access account</option>
+<option value="Catalogue">Catalogue</option>
+<option value="Catalogue Update">Catalogue Update</option>
+<option value="Category">Category</option>
+<option value="Category Strategy">Category Strategy</option>
+<option value="CDD General Query">CDD General Query</option>
+<option value="CDD Questionnaires / Attestation">CDD Questionnaires / Attestation</option>
+<option value="CDD Status Update">CDD Status Update</option>
+<option value="CN Copy Request">CN Copy Request</option>
+<option value="Credit Note">Credit Note</option>
+<option value="CN Submission">CN Submission</option>
+<option value="Compraga (EU)">Compraga (EU)</option>
+<option value="Contact Email- Contact Phone- Contact Name- Company Name Change">Contact Email- Contact Phone- Contact Name- Company Name Change</option>
+<option value="Contract Approval">Contract Approval</option>
+<option value="Contract Compliance">Contract Compliance</option>
+<option value="Contracts">Contracts</option>
+<option value="Contract Signing (Docusign)">Contract Signing (Docusign)</option>
+<option value="Contract Terms &amp; Conditions">Contract Terms &amp; Conditions</option>
+<option value="Contract Workspace">Contract Workspace</option>
+<option value="Correction">Correction</option>
+<option value="Counterparty">Counterparty</option>
+<option value="Creation">Creation</option>
+<option value="Credit Memo">Credit Memo</option>
+<option value="Currency issue">Currency issue</option>
+<option value="Deactivate Counterparty">Deactivate Counterparty</option>
+<option value="Delegation">Delegation</option>
+<option value="Delegation System Error">Delegation System Error</option>
+<option value="Deliver to Address Issue">Deliver to Address Issue</option>
+<option value="Downgrade Request">Downgrade Request</option>
+<option value="Dunning Letter">Dunning Letter</option>
+<option value="Duplicate">Duplicate</option>
+<option value="Duplicate / Additional">Duplicate / Additional</option>
+<option value="E-Maintenance General Query">E-Maintenance General Query</option>
+<option value="Emptoris PO / Invoice Issue">Emptoris PO / Invoice Issue</option>
+<option value="Escalation">Escalation</option>
+<option value="Evaluated Receipt Settlement (ERS) General Query">Evaluated Receipt Settlement (ERS) General Query</option>
+<option value="Expedite Payment">Expedite Payment</option>
+<option value="External Shopping Cart Access">External Shopping Cart Access</option>
+<option value="Feedback">Feedback</option>
+<option value="General Query">General Query</option>
+<option value="GR/SRM Confirmation Change/Reversal">GR/SRM Confirmation Change/Reversal</option>
+<option value="GR/SRM Confirmation General Query">GR/SRM Confirmation General Query</option>
+<option value="GR/SRM Confirmation Submission">GR/SRM Confirmation Submission</option>
+<option value="GR/SRM Confirmation System Error">GR/SRM Confirmation System Error</option>
+<option value="GR Change/Reversal">GR Change/Reversal</option>
+<option value="Goods Receipt">Goods Receipt</option>
+<option value="GR Submission">GR Submission</option>
+<option value="IAC Account Setup">IAC Account Setup</option>
+<option value="IAC Creation">IAC Creation</option>
+<option value="IAC Tax Query">IAC Tax Query</option>
+<option value="IAC Technical Issue">IAC Technical Issue</option>
+<option value="Incorrect Delegation Profile Setup">Incorrect Delegation Profile Setup</option>
+<option value="Incorrect PO">Incorrect PO</option>
+<option value="Insufficient Contract Value">Insufficient Contract Value</option>
+<option value="Invoice Accounting Error">Invoice Accounting Error</option>
+<option value="Invoice Against Contract">Invoice Against Contract</option>
+<option value="Invoice Payment Status Portal (IPSP)">Invoice Payment Status Portal (IPSP)</option>
+<option value="Issues with PO / Contract e.g. closed / expired">Issues with PO / Contract e.g. closed / expired</option>
+<option value="Junk">Junk</option>
+<option value="Login">Login</option>
+<option value="Master Data Approval">Master Data Approval</option>
+<option value="Material Master">Material Master</option>
+<option value="Monitoring">Monitoring</option>
+<option value="MSP Invoice Issue">MSP Invoice Issue</option>
+<option value="MSP Payment Status">MSP Payment Status</option>
+<option value="New/Onboarding Training Request">New/Onboarding Training Request</option>
+<option value="Non-Disclosure Agreement (NDA)">Non-Disclosure Agreement (NDA)</option>
+<option value="Non-PO Invoice Approval">Non-PO Invoice Approval</option>
+<option value="Non-PO Invoice copy request">Non-PO Invoice copy request</option>
+<option value="Non-PO Invoice Currency Issue">Non-PO Invoice Currency Issue</option>
+<option value="Non-PO Invoice Duplicate">Non-PO Invoice Duplicate</option>
+<option value="Non-PO Invoice">Non-PO Invoice</option>
+<option value="Non-PO Invoice Parked/Blocked">Non-PO Invoice Parked/Blocked</option>
+<option value="Non-PO Invoice Rejection">Non-PO Invoice Rejection</option>
+<option value="Non-PO Invoice Scanning">Non-PO Invoice Scanning</option>
+<option value="Non-PO Invoice Status">Non-PO Invoice Status</option>
+<option value="Non-PO Invoice Submission">Non-PO Invoice Submission</option>
+<option value="Non-PO Invoice Tax Issue">Non-PO Invoice Tax Issue</option>
+<option value="Non-PO Invoice Waiting for Approval from bp">Non-PO Invoice Waiting for Approval from bp</option>
+<option value="Notifications">Notifications</option>
+<option value="Onboarding Supplier Training Request">Onboarding Supplier Training Request</option>
+<option value="Other AP Transaction">Other AP Transaction</option>
+<option value="Out of scope support">Out of scope support</option>
+<option value="Overdue">Overdue</option>
+<option value="Pause Payment">Pause Payment</option>
+<option value="Payment Approval">Payment Approval</option>
+<option value="Payment Error">Payment Error</option>
+<option value="Payment">Payment</option>
+<option value="Payment Status">Payment Status</option>
+<option value="PO Approval">PO Approval</option>
+<option value="PO Cancellation">PO Cancellation</option>
+<option value="PO Change">PO Change</option>
+<option value="PO Closure">PO Closure</option>
+<option value="PO Confirmation">PO Confirmation</option>
+<option value="PO Creation">PO Creation</option>
+<option value="PO General Query">PO General Query</option>
+<option value="PO Invoice Approval">PO Invoice Approval</option>
+<option value="PO Invoice Copy Request">PO Invoice Copy Request</option>
+<option value="PO Invoice Currency Issue">PO Invoice Currency Issue</option>
+<option value="PO Invoice Duplicate">PO Invoice Duplicate</option>
+<option value="PO Invoice">PO Invoice</option>
+<option value="PO Invoice GRIR Reconciliation">PO Invoice GRIR Reconciliation</option>
+<option value="PO Invoice Rejection">PO Invoice Rejection</option>
+<option value="PO Invoice Re-processing">PO Invoice Re-processing</option>
+<option value="PO Invoice Status">PO Invoice Status</option>
+<option value="PO Invoice Submission">PO Invoice Submission</option>
+<option value="PO Invoice System Integration Issue">PO Invoice System Integration Issue</option>
+<option value="PO Invoice Tax Issue">PO Invoice Tax Issue</option>
+<option value="PO Invoice Waiting for Approval from bp">PO Invoice Waiting for Approval from bp</option>
+<option value="PO Layout Change">PO Layout Change</option>
+<option value="PO Missing from Ariba">PO Missing from Ariba</option>
+<option value="PO Print/Fax transmission">PO Print/Fax transmission</option>
+<option value="PO Reopen">PO Reopen</option>
+<option value="PO Resend to suppliers">PO Resend to suppliers</option>
+<option value="PO Status">PO Status</option>
+<option value="PO Terms &amp; Conditions">PO Terms &amp; Conditions</option>
+<option value="PO Transfer of Ownership">PO Transfer of Ownership</option>
+<option value="PR/PO Accounting Error">PR/PO Accounting Error</option>
+<option value="PR Approval">PR Approval</option>
+<option value="PR Cancellation">PR Cancellation</option>
+<option value="PR Change">PR Change</option>
+<option value="PR Creation">PR Creation</option>
+<option value="Purchase Requisition">Purchase Requisition</option>
+<option value="Pricebook Creation">Pricebook Creation</option>
+<option value="Pricebook">Pricebook</option>
+<option value="PR Requester / Approver Update">PR Requester / Approver Update</option>
+<option value="PR Status Update">PR Status Update</option>
+<option value="PR Tax Issue">PR Tax Issue</option>
+<option value="PR Transfer of Ownership">PR Transfer of Ownership</option>
+<option value="Purchase Order">Purchase Order</option>
+<option value="Questionnaires / Attestation">Questionnaires / Attestation</option>
+<option value="Received error message">Received error message</option>
+<option value="Refund">Refund</option>
+<option value="Refund from supplier">Refund from supplier</option>
+<option value="Rejection">Rejection</option>
+<option value="Remittance">Remittance</option>
+<option value="Reporting">Reporting</option>
+<option value="Returned Payment">Returned Payment</option>
+<option value="RiSource Data Transfer">RiSource Data Transfer</option>
+<option value="SAP (EGP, VP1)">SAP (EGP, VP1)</option>
+<option value="SC Change">SC Change</option>
+<option value="SC Creation">SC Creation</option>
+<option value="Shopping Cart">Shopping Cart</option>
+<option value="SC Requester / Approver Update">SC Requester / Approver Update</option>
+<option value="Service Solution (Legacy) General Query">Service Solution (Legacy) General Query</option>
+<option value="SES Approval">SES Approval</option>
+<option value="SES Correction / Cancellation">SES Correction / Cancellation</option>
+<option value="SES">SES</option>
+<option value="SES Rejection">SES Rejection</option>
+<option value="SES Status">SES Status</option>
+<option value="SES Submission">SES Submission</option>
+<option value="Shopping Cart Approval">Shopping Cart Approval</option>
+<option value="Sourcing">Sourcing</option>
+<option value="Split Account">Split Account</option>
+<option value="Spot Buy/Marketplace">Spot Buy/Marketplace</option>
+<option value="SRM">SRM</option>
+<option value="Status">Status</option>
+<option value="Submission">Submission</option>
+<option value="Supplier Portal">Supplier Portal</option>
+<option value="Supplier Portal Access">Supplier Portal Access</option>
+<option value="System Access">System Access</option>
+<option value="System Support">System Support</option>
+<option value="Tax Issue">Tax Issue</option>
+<option value="Tax Query">Tax Query</option>
+<option value="Technical issue">Technical issue</option>
+<option value="Took PO into wrong ANID">Took PO into wrong ANID</option>
+<option value="Training">Training</option>
+<option value="Training for New Deployment">Training for New Deployment</option>
+<option value="Training for System / Process">Training for System / Process</option>
+<option value="UKMS Mapping">UKMS Mapping</option>
+<option value="Unable to Access Account">Unable to Access Account</option>
+<option value="User Training Request">User Training Request</option>
+<option value="VMD Bank Details Update">VMD Bank Details Update</option>
+<option value="VMD Change">VMD Change</option>
+<option value="VMD Company Code / Purchasing Org Extension">VMD Company Code / Purchasing Org Extension</option>
+<option value="VMD Creation">VMD Creation</option>
+<option value="Vendor Master Data">Vendor Master Data</option>
+<option value="VMD Request Status">VMD Request Status</option>
+<option value="VMD Vendor Block">VMD Vendor Block</option>
+<option value="VMD Vendor Unblock">VMD Vendor Unblock</option>
+<option value="Waiting for approval from bp">Waiting for approval from bp</option>
+<option value="Warehousing">Warehousing</option>
+<option value="WPS">WPS</option>
+<option value="WPS Data Transfer">WPS Data Transfer</option>
+<option value="Wrong ANID linked to bp">Wrong ANID linked to bp</option>
+</select><br>
+
+<label for="status">Status</label><select  id="status" name="status"><option value="">--None--</option><option value="Draft">Draft</option>
+<option value="New">New</option>
+<option value="Pending Assignment">Pending Assignment</option>
+<option value="Assigned">Assigned</option>
+<option value="In Progress">In Progress</option>
+<option value="Send to FairMarkit">Send to FairMarkit</option>
+<option value="Pending Information">Pending Information</option>
+<option value="Pending Approval">Pending Approval</option>
+<option value="Approved">Approved</option>
+<option value="Rejected">Rejected</option>
+<option value="On Hold">On Hold</option>
+<option value="Returned">Returned</option>
+<option value="Resolved">Resolved</option>
+<option value="Terminated">Terminated</option>
+<option value="Escalated">Escalated</option>
+<option value="Open">Open</option>
+<option value="Closed">Closed</option>
+<option value="Under Investigation">Under Investigation</option>
+<option value="Complete">Complete</option>
+<option value="Ready to Submit">Ready to Submit</option>
+<option value="Submitted">Submitted</option>
+<option value="Accepted">Accepted</option>
+<option value="Recommendation Complete">Recommendation Complete</option>
+<option value="Revision Required">Revision Required</option>
+<option value="Deal Approved">Deal Approved</option>
+<option value="Approved with Terms">Approved with Terms</option>
+<option value="Deal Rejected">Deal Rejected</option>
+<option value="Archived">Archived</option>
+<option value="Rejected (Closed)">Rejected (Closed)</option>
+<option value="Approved (Closed)">Approved (Closed)</option>
+<option value="Reassigned">Reassigned</option>
+<option value="Proposed Change">Proposed Change</option>
+<option value="Waiting for Information">Waiting for Information</option>
+<option value="Updated">Updated</option>
+<option value="In-transition">In-transition</option>
+<option value="Consultation">Consultation</option>
+<option value="Pipeline">Pipeline</option>
+<option value="Implementation">Implementation</option>
+<option value="Pending Approval to Implement">Pending Approval to Implement</option>
+<option value="Pending Approval to Design">Pending Approval to Design</option>
+<option value="Design">Design</option>
+<option value="Initial Review">Initial Review</option>
+<option value="Awaiting SAP closure">Awaiting SAP closure</option>
+<option value="Actions complete">Actions complete</option>
+<option value="Merged">Merged</option>
+</select><br>
+
+<input type="hidden"  id="external" name="external" value="1" /><br>
+<input name="recordType" id="recordType" value="0124G0000007XA0">
+
+<input type="submit" name="submit">
+
+</form>
