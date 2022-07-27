@@ -14,14 +14,11 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<!-- Test Link ="https://bpcompany--dpctest.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" -->
-<!-- Prod Link ="https://bpcompany.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" -->
-<form action="https://bpcompany--dpctest.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-<!-- Test OrgId ="00D3H0000000cZU" and Production Org Id ="00D0Y000001fRsz" -->
-<input type=hidden name='captcha_settings' value='{"keyname":"recaptacha","fallback":"true","orgId":"00D3H0000000cZU","ts":""}'>
-<!-- Test Id ="00D3M0000000gHf" and Production Id ="00D0Y000001fRsz" -->
-<input type=hidden name="orgid" value="00D3H0000000cZU">
-<input type=hidden name="retURL" value="https://fsupplierportal.bp.com/sites#myCase-Display">
+<form action="https://bpcompany--dpcdev.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"TestRecaptcha","fallback":"true","orgId":"00D3H0000000gG6","ts":""}'>
+<input type=hidden name="orgid" value="00D3H0000000gG6">
+<input type=hidden name="retURL" value="http://google.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -30,42 +27,19 @@
 <!--  <input type="hidden" name="debugEmail" value="nikita.gupta1@bp.com">    -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" required /><br>
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-<label for="email">Email Address</label><input  id="email" maxlength="80" name="email" size="20" type="email" required/><br>
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="company">Company Name</label><input  id="company" maxlength="80" name="company" size="20" type="text" required/><br>
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-Issue Type:<select  id="00N4G000006xsWh" name="00N4G000006xsWh" title="myAnalysis" required>
-<option value="">--None--</option>
-<option value="Registration Error">Registration Error</option>
-<option value="Registration Query">Registration Query</option>
-<option value="Login Query">Login Query</option>
-<option value="Login Error">Login Error</option>
-</select><br>
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" required /><br>
-
-<label for="description">Description</label><textarea name="description"required></textarea><br>
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
 <input type="hidden"  id="external" name="external" value="1" /><br>
 
 <div class="g-recaptcha" data-sitekey="6LfI7R4gAAAAAOMBvp-ThEoo4C5pnFbdOMKb3o9o"></div><br>
-<!-- Myprocurement Record Type Id -->
-<input type="hidden" name="recordType" id="recordType" value="0124G0000007XA0"><br>
-<!-- System Value -->
-<input type="hidden" id="00N4G000006pjx3" name="00N4G000006pjx3" title="System" value="	Non-Ariba"><br>
-<!-- Query Value -->
-<input type="hidden" id="00N4G000006xryx" name="00N4G000006xryx" title="Query" value="System Access &amp; Administrative Support"><br>
-<!-- sub-Query Value -->
-<input type="hidden" id="00N4G000006xsWf" name="00N4G000006xsWf" title="Sub-Query" value="Supplier Portal Access"><br>
-<!-- Origin Value -->
-<input type="hidden" id="origin" name="origin" value="Supplier Guest Page" /><br>
-<!-- Status Value -->
-<input type="hidden" id="status" name="status"  value="Pending Assignment" /><br>
-
-
-
 <input type="submit" name="submit">
 
 </form>
